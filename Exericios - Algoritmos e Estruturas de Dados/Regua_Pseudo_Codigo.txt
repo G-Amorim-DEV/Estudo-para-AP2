@@ -1,0 +1,19 @@
+Iniciar o programa
+
+    Criar uma lista vazia do tipo Integer
+    
+    Exibir uma caixa de entrada para o usuário com a mensagem "Digite um número para criar uma régua"
+    Ler o valor digitado pelo usuário e armazenar em uma variável chamada 'num'
+
+    Para i de 0 até 'num - 1', faça:
+        Calcular i * 10
+        Adicionar o valor calculado à lista
+        Exibir o valor da lista[i] seguido de "----"
+    
+    Exibir o valor 'num * 10'
+
+    Para j de 0 até 'num', faça:
+        Exibir o valor de j
+        Exibir "     " (espaço entre os valores)
+
+Fim do programa

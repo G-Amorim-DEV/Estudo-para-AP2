@@ -1,0 +1,34 @@
+Início
+
+    Função somaArray(lista: vetor de inteiros) -> inteiro
+        soma ← 0
+        Para cada item em lista faça
+            soma ← soma + item
+        FimPara
+        Retorne soma
+    FimFunção
+
+    ls ← CriarInstânciaDe(LinearSum)
+
+    inicio ← MostrarCaixaDeEntrada("Digite o valor inicial:")
+    incremento ← MostrarCaixaDeEntrada("Digite o valor do incremento:")
+    fim ← MostrarCaixaDeEntrada("Digite o valor final:")
+
+    sequencia ← CriarListaVazia()
+
+    ConstruirMensagem "Sequência gerada:"
+
+    Para i de inicio até fim com incremento faça
+        Adicionar i à sequencia
+        ConstruirMensagem adicionar i com espaço
+    FimPara
+
+    arraySequencia ← ConverterSequenciaParaVetor(sequencia)
+
+    soma ← Chamar somaArray(arraySequencia)
+
+    Adicionar à mensagem: "Soma da sequência: " + soma
+
+    MostrarCaixaDeMensagem(mensagem)
+
+Fim

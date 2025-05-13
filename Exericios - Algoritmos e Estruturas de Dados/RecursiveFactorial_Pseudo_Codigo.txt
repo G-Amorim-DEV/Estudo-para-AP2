@@ -1,0 +1,19 @@
+Início
+
+    Função factorial(n: inteiro) -> inteiro
+        Se n for igual a 1
+            Retorne 1
+        Senão
+            Retorne n * factorial(n - 1)
+        FimSe
+    FimFunção
+
+    input ← MostrarCaixaDeEntrada("Digite o número que quer saber o seu fatorial:")
+    entrada ← ConverterParaInteiro(input)
+
+    rf ← CriarInstânciaDe(RecursiveFactorial)
+    resultado ← Chamar factorial(entrada)
+
+    MostrarCaixaDeMensagem("Fatorial de " + entrada + " é: " + resultado)
+
+Fim

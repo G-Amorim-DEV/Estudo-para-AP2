@@ -1,0 +1,44 @@
+Início
+
+    Função reverseArray(lista: lista de inteiros) -> lista de inteiros
+        Criar lista vazia chamada reversed com o mesmo tamanho de lista
+        Inicializar variável j com 0
+        Para cada i de lista.length - 1 até 0 (de trás para frente)
+            Atribuir lista[i] a reversed[j]
+            Incrementar j
+        Retorne reversed
+    FimFunção
+
+    inicio ← MostrarCaixaDeEntrada("Digite o valor inicial:")
+    incremento ← MostrarCaixaDeEntrada("Digite o valor do incremento:")
+    fim ← MostrarCaixaDeEntrada("Digite o valor final:")
+
+    Criar lista sequencia vazia
+    Criar variável output do tipo StringBuilder
+
+    Adicionar "Sequência gerada:" a output
+    Para i de inicio até fim com incremento
+        Adicionar i à sequencia
+        Adicionar i a output
+    FimPara
+
+    Criar array arraySequencia do mesmo tamanho de sequencia
+    Para cada índice i em sequencia
+        Atribuir sequencia[i] a arraySequencia[i]
+    FimPara
+
+    Adicionar "\n\nArray original:" a output
+    Para cada número num em arraySequencia
+        Adicionar num a output
+    FimPara
+
+    Criar array reversedArray chamando a função reverseArray passando arraySequencia
+
+    Adicionar "\n\nArray invertido:" a output
+    Para cada número num em reversedArray
+        Adicionar num a output
+    FimPara
+
+    MostrarCaixaDeMensagem(output)
+
+Fim
