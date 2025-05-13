@@ -1,0 +1,24 @@
+Início
+
+    Função fibonacci(k: inteiro) -> inteiro
+        a ← 0
+        b ← 1
+
+        Para i de 0 até k - 1 faça
+            temp ← a
+            a ← b
+            b ← temp + b
+        FimPara
+
+        Retorne a
+    FimFunção
+
+    input ← MostrarCaixaDeEntrada("Digite o valor de k:")
+    k ← ConverterParaInteiro(input)
+    fib ← fibonacci(k)
+    binario ← ConverterParaBinario(fib)
+    mensagem ← "O " + k + "º número de Fibonacci é: " + fib + "\n" +
+                "O " + k + "º número de Fibonacci em binário é: " + binario
+    MostrarCaixaDeMensagem(mensagem)
+
+Fim
